@@ -1,0 +1,131 @@
+@import url(/css/header.css);
+@import url(/css/global.css);
+@import url(/css/note-upload.css);
+@import url(/css/footer.css);
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    text-align: center;
+    min-height: 70vh;
+    max-width: 100vw;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-top: -25px;
+}
+
+.search-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 450px;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 10px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    padding-left: 15px;
+    border-radius: 30px;
+    border: none;
+    width: 80%;
+}
+
+.search-container button {
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    width: 18%;
+    &:hover{
+        background-color: orangered ;
+    }
+}
+
+.hero-section .image-holder{
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+@media (max-width: 768px) {
+    .hero-section .image-holder{
+        height: 300px;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 368px) {
+    .hero-section .image-holder{
+        height: 250px;
+        max-width: 300px;
+    }
+}
+
+.popular-notes-section {
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.popular-notes-section h2{
+    font-size: 40px;
+}
+
+.popular-notes-section .subjects-container{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    column-gap: 40px;
+    margin-top: 20px;
+}
+
+.popular-notes-section .subjects-container .subject{
+    padding: 40px 25px;
+    background-color: aliceblue;
+    min-height: 200px;
+    max-width: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4,60px);
+    grid-template-columns: repeat(1,300px);
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.popular-notes-section .subjects-container .subject button{
+    padding: 5px;
+    border-radius: 30px;
+    height: 40px;
+    max-width: 140px;
+    width: 100%;
+    justify-self: center;
+    background-color:#8e8efd;
+    color: #fff;
+    &:hover{
+        background-color: #6969f0cc;
+        cursor: pointer;
+    }
+}
+
+.popular-notes-section .subjects-container .subject img{
+    width: 120px;
+    height: 100px;
+    justify-self: center;
+    mix-blend-mode: darken;
+}

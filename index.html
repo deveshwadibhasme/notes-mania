@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Notes Mania</title>
+    <link rel='stylesheet' href='style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Funnel+Sans:300,regular,500,600,700,800,300" rel="stylesheet" />
+    <script src='https://kit.fontawesome.com/0f0486bb75.js' crossorigin='anonymous'></script>
+    <script src='script.js' defer></script>
+</head>
+
+<body>
+    <div class="full-page-container">
+        <header>
+            <div class="logo">
+                <img src="/images/notes-illustration-3d-free-png.webp" alt="notes-img">
+                <span>Notes Mania</span>
+            </div>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/class/">Class</a>
+                <a href="/notes/">My Notes</a>
+                <a href="/upload-notes/">Upload Notes</a>
+                <a href="/profile/">Profile</a>
+            </nav>
+        </header>
+
+        <div class="hero-section" id="hero">
+            <h1>Welcome to Notes Mania</h1>
+            <p>A simple and effective way to manage your notes.</p>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for notes">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="image-holder">
+                <img src="/images/young-girl.png" alt="">
+            </div>
+        </div>
+
+        <div class="note-upload-section">
+            <h2>Upload Your Notes</h2>
+            <p>Share Your Notes with the community</p>
+            <form id="note-upload-form" method="post" enctype="multipart/form-data">
+                <label for="note-file">Note Title</label>
+                <input type="text" name="note-title" id="note-title">
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description">
+                <label for="note-file">Choose a file</label>
+                <input type="file" id="note-file" name="note-file" accept=".pdf,.docx,.txt,.jpg,.png,.jpeg">
+                <button type="submit" disabled>Upload</button>
+            </form>
+        </div>
+        <div class="popular-notes-section">
+            <h2>Popular Subjects</h2>
+            <p>Check out the most popular subjects</p>
+            <div class="subjects-container">
+                <div class="subject">
+                    <img src="/images/maths.avif" alt="">
+                    <h3>Mathematics</h3>
+                    <p>Discover the world of numbers, shapes, and patterns.</p>
+                    <button class="notes">View Notes</button>
+                </div>
+                <div class="subject">
+                    <img src="/images/science.svg" alt="">
+                    <h3>Science</h3>
+                    <p>Learn about the universe and its mysteries.</p>
+                    <button class="notes">View Notes</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-text">
+                <h1>Join Today</h1>
+                <p>Create an Account to upload and manage your note. Helps Our Community to grow</p>
+                <button>Sign in</button>
+            </div>
+            <div class="rights-and-social">
+            <p>&copy; Mohit Deotare 2024 Notes Mania. All rights reserved.</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

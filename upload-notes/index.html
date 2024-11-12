@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Konichiwa</title>
+    <link rel='stylesheet' href='style.css'>
+    <script src='https://kit.fontawesome.com/0f0486bb75.js' crossorigin='anonymous'></script>
+    <script src='script.js' defer></script>
+</head>
+
+<body>
+<div class="full-page-container">
+    <header>
+        <div class="logo">
+           <img src="/images/notes-illustration-3d-free-png.webp" alt="notes-img">
+           <span>Notes Mania</span>
+        </div>  
+        <nav>
+            <a href="/">Home</a>
+            <a href="/class/">Class</a>
+            <a href="/notes/">My Notes</a>
+            <a href="/upload-notes/">Upload Notes</a>
+            <a href="/profile/">Profile</a>
+        </nav>
+    </header>
+    <div class="note-upload-section">
+        <h2>Upload Your Notes</h2>
+        <p>Share Your Notes with the community</p>
+        <form id="note-upload-form"  method="post" enctype="multipart/form-data">
+            <label for="note-file">Note Title</label>
+            <input type="text" name="note-title" id="note-title">
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description">
+            <label for="note-file">Choose a file</label>
+            <input type="file" id="note-file" name="note-file" accept=".pdf,.docx,.txt,.jpg,.png,.jpeg">
+            <button type="submit" disabled>Upload</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
