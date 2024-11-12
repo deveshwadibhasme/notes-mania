@@ -92,7 +92,7 @@
     width:100%;
     column-gap: 40px;
     margin-top: 20px;
-}
+}   
 
 .popular-notes-section .subjects-container .subject{
     padding: 40px 25px;
@@ -128,4 +128,29 @@
     height: 100px;
     justify-self: center;
     mix-blend-mode: darken;
+}
+
+@media (max-width: 868px) {
+    .popular-notes-section .subjects-container .subject{
+        grid-template-rows: repeat(4,40px);
+        grid-template-columns: repeat(1,120px);
+        padding: 10px;
+    }
+    .popular-notes-section .subjects-container .subject img{
+        width: 40px;
+        height: 40px;
+    }
+    .popular-notes-section .subjects-container .subject {
+        h2{
+            font-size: 12px;
+        }
+        p{
+            font-size: 10px;
+        }
+        button{
+            font-size: 10px;
+            padding: 2px;
+            height: 30px;
+        }
+    }
 }

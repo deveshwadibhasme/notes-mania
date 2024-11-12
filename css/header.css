@@ -1,41 +1,71 @@
-header{
-    max-width: 100vw;
-    width: 97%;
-    padding-inline:10px;
-    min-height: 50px;
-    padding-block: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
+header {
+  max-width: 100vw;
+  width: 97%;
+  padding-inline: 10px;
+  min-height: 50px;
+  padding-block: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
 }
 
-header .logo{
-    height: 50px;
-    max-width: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 20px;
-    gap: 5px;
-    img{
-        width: 30%;
-        height: 110%;
-    }
+header .logo {
+  height: 50px;
+  max-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  gap: 5px;
+  img {
+    width: 30%;
+    height: 110%;
+  }
 }
 
-header nav{
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
 }
 
-header nav a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 10px;
-    &:hover{
-        color: orangered;
-    }
+header nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px;
+  &:hover {
+    color: orangered;
+  }
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 868px) {
+  header nav {
+    right: -100%;
+    position: absolute;
+  }
+  header.logo {
+    gap: 10px;
+  }
+  .menu {
+    display: block;
+  }
+
+  header .open-nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    background-color: rgb(108, 186, 231);
+    padding-top: 100px;
+    transition: all 0.5s ease;
+  }
 }
