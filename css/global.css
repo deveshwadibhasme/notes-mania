@@ -21,10 +21,6 @@
       list-style: none;
     }
   }
-
-    html,body{
-        overflow:hidden;
-    }
   
   .full-page-container {
     max-width: 100vw;
