@@ -45,29 +45,32 @@ header nav a {
 }
 
 @media (max-width: 868px) {
-  header nav {
-    display:none;
+  header nav {  
+    bottom:  100%;
     right: -100%;
     position: absolute;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+    position: absolute;
+    height: 100%;
+    background-color: rgb(108, 186, 231);
+    padding-top: 100px;
   }
+
   header.logo {
     gap: 10px;
   }
+
   .menu {
     display: block;
   }
 
   header .open-nav {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 60%;
-    position: absolute;
-    top: 0px;
+    display: flex;
+    transition: all 0.5s ease--in-out;
+    bottom: 0px;
     right: 0px;
-    height: 100%;
-    background-color: rgb(108, 186, 231);
-    padding-top: 100px;
-    transition: all 0.5s ease;
   }
 }
