@@ -46,6 +46,7 @@ header nav a {
 
 @media (max-width: 868px) {
   header nav {
+    display:none;
     right: -100%;
     position: absolute;
   }
@@ -57,6 +58,7 @@ header nav a {
   }
 
   header .open-nav {
+    display:flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 60%;
