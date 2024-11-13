@@ -2,3 +2,7 @@
 @import url(/css/global.css);
 @import url(/css/header.css);
 @import url(/css/footer.css);
+
+.note-upload-section{
+    margin-top: 5px;
+}
